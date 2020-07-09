@@ -12,19 +12,20 @@ html,body{
     overflow-x: hidden;
 }
 .header{
-    padding-top: 23px;
+    padding-top: 64px;
     position: relative;
 }
 .header__background{
     position: absolute;
-    right: -132px;
-    top: -210px;
+    right: -138px;
+    top: -160px;
     z-index: -1;
 }
+
 .header__navbar{
     display: flex;
     justify-content: space-between;
-    margin-bottom: 78px;
+    margin-bottom: 122px;
 }
 .header__navbar-logo{
     background-color: var(--color);
@@ -85,9 +86,68 @@ html,body{
     background-color: var(--color);
 }
 .header__start-right{
-    height: 345px;
-    overflow: hidden;
-    float: right;
+    padding-left: 5%;
+
+}
+.background__curve--one{
+    position: absolute;
+    bottom: -13%;
+    left: -4%;
+}
+.background__curve--two{
+    position: absolute;
+    top: 55%;
+    right: 28%;
+}
+
+.circle__round{
+    position: absolute;
+    width: 39px;
+    height: 39px;
+    border-radius: 50%;
+    box-shadow: 0 0 0 5px #D0F8F1,  0 0 0 15px #D0F8F1;
+    z-index: -1;
+}
+.circle__round-full{
+    position: absolute;
+    width: 87px;
+    height: 87px;
+    border-radius: 50%;
+    background-color: #CFF8F1;
+    z-index: -1;
+}
+.circle__round--one{
+    right: 20%;
+    top: 34%;
+}
+.circle__round--two{
+    right: 5%;
+    top: 70%;
+}
+.circle__round--three{
+    right: 3%;
+    bottom: -44%;
+}
+.circle__round--four{
+    left: 40%;
+    bottom: 48%;
+}
+.circle__round--five{
+    position: absolute;
+    width: 39px;
+    height: 39px;
+    border-radius: 50%;
+    box-shadow: 0 0 0 5px #FFFAF4,  0 0 0 15px #FFFAF4;
+    top: 26%;
+    left: 23%;
+}
+.circle__round--six{
+    bottom: -15%;
+    left: 13%;
+}
+.circle__round--seven{
+    bottom: -9%;
+    left: 53%;
 }
 .about{
     padding-top: 130px;
