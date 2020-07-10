@@ -26,21 +26,6 @@ navClose.addEventListener('click', function(){
   listNavBar.classList.remove('is--open');
 })
 
-// var bar = document.querySelector('.service__item-right__bar--web'); 
-// var widthBar = document.querySelector('.service__item-right__percent');
 
-// function progressBar(widthBar, percent){
-//   var width = 1;
-//   var id = setInterval(frame, 10);
-//   function frame() {
-//     if (width >= percent.innerText) {
-//       clearInterval(id);
-//     } else {
-//       width++; 
-//       widthBar.style.width = width + '%'; 
-//     }
-//   }
-// }
-// progressBar(bar, widthBar);
   
 
