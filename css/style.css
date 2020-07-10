@@ -269,16 +269,41 @@ html,body{
     stroke-width: 5px;
   }
   .about__circle-item circle.about__circle--design {
-    stroke-dashoffset: calc(440 - (440 * 50) / 100);
+    stroke-dashoffset: calc(440 - (440 * var(--percent)) / 100);
+    -webkit-animation: abc ease-in 0.8s;
+            animation: abc ease-in 0.8s;
   }
   .about__circle-item circle.about__circle--developer {
-    stroke-dashoffset: calc(440 - (440 * 75) / 100);
+    stroke-dashoffset: calc(440 - (440 * var(--percent)) / 100);
+    -webkit-animation: abc ease-in 0.8s;
+            animation: abc ease-in 0.8s;
   }
   .about__circle-item circle.about__circle--web {
-    stroke-dashoffset: calc(440 - (440 * 20) / 100);
+    stroke-dashoffset: calc(440 - (440 * var(--percent)) / 100);
+    -webkit-animation: abc ease-in 0.8s;
+            animation: abc ease-in 0.8s;
   }
   .about__circle-item circle.about__circle--user {
-    stroke-dashoffset: calc(440 - (440 * 50) / 100);
+    stroke-dashoffset: calc(440 - (440 * var(--percent)) / 100);
+    -webkit-animation: abc ease-in 0.8s;
+            animation: abc ease-in 0.8s;
+  }
+  @-webkit-keyframes abc {
+      
+    from{
+        stroke-dashoffset: 0;
+    } 
+    to{
+        stroke-dashoffset: 440;
+    } 
+  }
+  @keyframes abc {
+    from{
+        stroke-dashoffset: 0;
+    } 
+    to{
+        stroke-dashoffset: 440;
+    } 
   }
 /* .about__circle-item::before{
     content: '';
@@ -454,7 +479,11 @@ html,body{
     color: #151D41;
     font-weight: 800;
 }
+.service__item-right__percent::after{
+    content: '%';
+}
 .service__item-right__bar{
+    position: relative;
     width: 100%;
     height: 6px;
     background-color: #CFF2DF;
@@ -462,40 +491,54 @@ html,body{
     margin: 40px 0 30px 0;
 }
 .service__item-right__bar--web{
-    position: relative;
-}
-.service__item-right__bar--web::before{
-    content: '';
     position: absolute;
     top: 0;
     left: 0;
-    width: 95%;
+    width: var(--percent);
     height: 100%;
     background-color: var(--color);
-}
+    -webkit-animation: progress ease-in 0.5s;
+            animation: progress ease-in 0.5s;
+}   
 .service__item-right__bar--graphics{
-    position: relative;
-}
-.service__item-right__bar--graphics::before{
-    content: '';
     position: absolute;
     top: 0;
     left: 0;
     width: 85%;
     height: 100%;
     background-color: var(--color);
+    -webkit-animation: progress ease-in 0.5s;
+            animation: progress ease-in 0.5s;
 }
 .service__item-right__bar--developement{
-    position: relative;
-}
-.service__item-right__bar--developement::before{
-    content: '';
     position: absolute;
     top: 0;
     left: 0;
     width: 70%;
     height: 100%;
     background-color: var(--color);
+    -webkit-animation: progress ease-in 0.5s;
+            animation: progress ease-in 0.5s;
+}
+@-webkit-keyframes progress{
+    from{
+        opacity: 0;
+        width: 0;
+    }
+    to{
+        opacity: 1;
+        width: var(--percent);
+    }
+}
+@keyframes progress{
+    from{
+        opacity: 0;
+        width: 0;
+    }
+    to{
+        opacity: 1;
+        width: var(--percent);
+    }
 }
 .service__item-right__name{
     font-size: 27px;
@@ -1057,7 +1100,8 @@ html,body{
     top: 0;
     bottom: 0;
     transition: 0.5s ;
-    animation:  fadeRight linear 0.3s;
+    -webkit-animation:  fadeRight linear 0.3s;
+            animation:  fadeRight linear 0.3s;
     z-index: 999;
 }
 .header__navbar-mobile__collapse.is--open{
@@ -1093,6 +1137,14 @@ html,body{
 }
 .header__navbar-mobile__link{
     text-align: center;
+}
+@-webkit-keyframes fadeRight{
+    from{
+        opacity: 0;
+      }
+      to{
+        opacity: 1;
+      }
 }
 @keyframes fadeRight{
     from{
