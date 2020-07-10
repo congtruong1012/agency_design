@@ -89,15 +89,17 @@ html,body{
     padding-left: 5%;
 
 }
-.background__curve--one{
+.background__curve{
     position: absolute;
+    z-index: -1;
+}
+.background__curve--one{
     bottom: -13%;
-    left: -4%;
+    left: -4%;   
 }
 .background__curve--two{
-    position: absolute;
     top: 55%;
-    right: 28%;
+    right: 28%;   
 }
 
 .circle__round{
@@ -105,8 +107,14 @@ html,body{
     width: 39px;
     height: 39px;
     border-radius: 50%;
-    box-shadow: 0 0 0 5px #D0F8F1,  0 0 0 15px #D0F8F1;
     z-index: -1;
+}
+.circle__round--blue {
+    box-shadow: 0 0 0 5px #D0F8F1,  0 0 0 15px #D0F8F1;
+}
+.circle__round--pink{
+    
+    box-shadow: 0 0 0 5px #FFFAF4,  0 0 0 15px #FFFAF4;
 }
 .circle__round-full{
     position: absolute;
@@ -133,11 +141,6 @@ html,body{
     bottom: 48%;
 }
 .circle__round--five{
-    position: absolute;
-    width: 39px;
-    height: 39px;
-    border-radius: 50%;
-    box-shadow: 0 0 0 5px #FFFAF4,  0 0 0 15px #FFFAF4;
     top: 26%;
     left: 23%;
 }
@@ -441,7 +444,6 @@ html,body{
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 999;
 }
 .service__item-right__content{
     width: 456px;
@@ -625,6 +627,7 @@ html,body{
     border-radius: 4px;
 }
 .testimonials{
+    position: relative;
     text-align: center;
     font-family: var(--font-family);
     max-width: 820px;
@@ -717,6 +720,30 @@ html,body{
 .testimonials__item:last-child{
     margin: 0 -12px;
     z-index: -1;
+}
+.circle__round--eight{
+    top: -1%;
+    right: 20%;
+}
+.circle__round--nine{
+    top: 80%;
+    left: 70%;
+}
+.circle__round--ten{
+    right: 5%;
+    top: 53%;
+}
+.circle__round--eleven{
+    left: 12%;
+    top: 67%;
+}
+.circle__round--twelve{
+    top: -15%;
+    left: 40%;
+}
+.background__curve--three{
+    left: -15%;
+    top: 0%;
 }
 .blog{
     text-align: center;
@@ -1019,6 +1046,7 @@ html,body{
     right: 0;
     background: rgba(0,0,0,0.2);
     display: none;
+    z-index: 2;
 }
 .header__navbar-mobile__collapse{
     opacity: 0;
@@ -1030,6 +1058,7 @@ html,body{
     bottom: 0;
     transition: 0.5s ;
     animation:  fadeRight linear 0.3s;
+    z-index: 999;
 }
 .header__navbar-mobile__collapse.is--open{
     opacity: 1;

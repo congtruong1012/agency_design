@@ -1,4 +1,7 @@
 @media (max-width: 1023px) { 
+    .header{
+        padding-top: 30px;
+    }
     .header__navbar{
         display: none;
     }
@@ -111,6 +114,11 @@
         display: block;
         padding: 0 30px;
     }
+    .circle__round,
+    .circle__round-full,
+    .background__curve{
+        display: none;
+    }
     .about__wrapper{
         flex-direction: column;
         align-items: center;
@@ -150,7 +158,9 @@
     .portfolio__list{
         margin: 0 10px;
     }
-    
+    .blog__list{
+        padding: 0 10px;
+    }
 }
 @media (max-width: 576px) { 
     .header__navbar{
