@@ -571,6 +571,7 @@ html,body{
     font-size: 20px;
     text-transform: uppercase;
     margin-top: 126px;
+    margin-bottom: 33px;
     color: var(--color);
     position: relative;
     font-weight: 500;
@@ -1080,6 +1081,7 @@ html,body{
     border: none;
     font-size: 20px;
     color: #000;
+    cursor: pointer;
 }
 .nav__overlay{
     position: fixed;
