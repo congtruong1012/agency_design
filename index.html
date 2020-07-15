@@ -7,12 +7,11 @@
     <title>Agency Design</title>
     <link rel="shortcut icon" href="./image/Group50.png" type="image/png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-    <link rel="stylesheet" href="./css/fontawesome-all-min.css.css">
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;700&family=Montserrat&display=swap"
     rel="stylesheet">
     <link rel="stylesheet" href="./css/grid.css">
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/responsive.css">
+    <link rel="stylesheet" href="./scss/style.css">
+    <link rel="stylesheet" href="./scss/responsive.css">
 </head>
 
 <body>
@@ -44,29 +43,33 @@
             </nav>
             <nav class="header__navbar-mobile">
                 <div class="nav__overlay"></div>
-                <div class="header__navbar-mobile__inner">
-                    <a href="#" class="header__navbar-mobile__link">
+                <div class="header__navbar-inner">
+                    <a href="#">
                         <img src="./image/Group50.png" alt="">
                     </a>
-                    <button class="header__navbar-mobile__bar"><i class="fas fa-bars"></i></button>
+                    <button>
+                        <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="bars" class="svg-inline--fa fa-bars fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z"></path></svg>
+                    </button>
                 </div>
-                <div class="header__navbar-mobile__collapse">
-                    <button class="header__navbar-mobile__close">&times;</button>
-                    <ul class="header__navbar-mobile__list">
-                        <li class="header__navbar-mobile__item">
-                            <a href="#" class="header__navbar-mobile__link">Home</a>
+                <div class="header__navbar-collapse">
+                    <button class="header__navbar-close">
+                        <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="times" class="svg-inline--fa fa-times fa-w-11" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 352 512"><path fill="currentColor" d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z"></path></svg>
+                    </button>
+                    <ul class="header__navbar-list">
+                        <li class="header__navbar-item">
+                            <a href="#" class="header__navbar-link">Home</a>
                         </li>
-                        <li class="header__navbar-mobile__item">
-                            <a href="#" class="header__navbar-mobile__link">About us</a>
+                        <li class="header__navbar-item">
+                            <a href="#" class="header__navbar-link">About us</a>
                         </li>
-                        <li class="header__navbar-mobile__item">
-                            <a href="#" class="header__navbar-mobile__link">Services</a>
+                        <li class="header__navbar-item">
+                            <a href="#" class="header__navbar-link">Services</a>
                         </li>
-                        <li class="header__navbar-mobile__item">
-                            <a href="#" class="header__navbar-mobile__link">News</a>
+                        <li class="header__navbar-item">
+                            <a href="#" class="header__navbar-link">News</a>
                         </li>
-                        <li class="header__navbar-mobile__item">
-                            <a href="#" class="header__navbar-mobile__link">Resources</a>
+                        <li class="header__navbar-item">
+                            <a href="#" class="header__navbar-link">Resources</a>
                         </li>
                         
                     </ul>
@@ -97,17 +100,17 @@
             </div>
         </div>
         <img src="./image/Path1.png" alt="" class="header__background">
-        <div class="circle__round circle__round--blue circle__round--one "></div>
-        <div class="circle__round circle__round--blue circle__round--two"></div>
-        <div class="circle__round circle__round--blue circle__round--three"></div>
-        <div class="circle__round circle__round--blue circle__round--four"></div>
-        <div class="circle__round circle__round--pink  circle__round--five"></div>
-        <div class="circle__round-full circle__round--six"></div>
-        <div class="circle__round-full circle__round--seven"></div>
-        <div class="background__curve background__curve--one">
+        <div class="round round--one "></div>
+        <div class="round round--two"></div>
+        <div class="round round--three"></div>
+        <div class="round round--four"></div>
+        <div class="round round--five"></div>
+        <div class="round-full round-full--six"></div>
+        <div class="round-full round-full--seven"></div>
+        <div class="background-curve background-curve--one">
             <img src="./image/Path6.png" alt="">
         </div>
-        <div class="background__curve background__curve--two">
+        <div class="background-curve background-curve--two">
             <img src="./image/Path27.png" alt="">
         </div>
     </div>
@@ -117,11 +120,11 @@
                 <div class="about__img">
                     <img src="./image/freelancer-bearded-man-taking-notes-laptop_85574-3146.png" alt="">
                     <img src="./image/Path116.png" alt="" class="about__round--green">
-                    <img src="./image/group224.png" alt="" class="about__point">
+                    <img src="./image/Group224.png" alt="" class="about__point">
                 </div>
                 <div class="about__info">
                     <div class="about__content">
-                        <h5>ABOUT ME</h5>
+                        <h5>ABOUT ME</h5><br>
                         <div class="about__title">Why hire us for your <br> next project?</div>
                         <div class="about__desc">
                             We are Creative Director and UI/UX Designer from New York, working in web development and
@@ -191,28 +194,28 @@
                             <div class="service__item-round">
                                 <img src="./image/Path121.png" alt="">
                             </div>
-                            <div class="service__item-left__title">Web Design</div>
-                            <ul class="service__item-left__list">
-                                <li class="service__item-left__item"></li>
-                                <li class="service__item-left__item"></li>
-                                <li class="service__item-left__item"></li>
+                            <div class="service__item-nameL">Web Design</div>
+                            <ul class="service__item-list">
+                                <li class="service__item-solid"></li>
+                                <li class="service__item-solid"></li>
+                                <li class="service__item-solid"></li>
                             </ul>
-                            <div class="service__item-left__content">
+                            <div class="service__item-contentL">
                                 Lorem ipsum dolor sit amet,Stet clita kasd lorem ipsum dolor sit amet. sed diam eirmod
                                 tempor dolore.
                             </div>
-                            <a href="#" class="service__item-left__btn">Know More <i class="fal fa-arrow-right"></i></a>
+                            <a href="#" class="service__item-btn">Know More <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="arrow-right" class="svg-inline--fa fa-arrow-right fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M190.5 66.9l22.2-22.2c9.4-9.4 24.6-9.4 33.9 0L441 239c9.4 9.4 9.4 24.6 0 33.9L246.6 467.3c-9.4 9.4-24.6 9.4-33.9 0l-22.2-22.2c-9.5-9.5-9.3-25 .4-34.3L311.4 296H24c-13.3 0-24-10.7-24-24v-32c0-13.3 10.7-24 24-24h287.4L190.9 101.2c-9.8-9.3-10-24.8-.4-34.3z"></path></svg></a>
                         </div>
                         <div class="service__item-right">
-                            <div class="service__item-right__content">
-                                <div class="service__item-right__percent" >95</div>
-                                <div class="service__item-right__bar ">
-                                    <div class="service__item-right__bar--web" style="--percent: 95%">
+                            <div class="service__item-contentR">
+                                <div class="service__item-percent" >95%</div>
+                                <div class="service__item-progressBar">
+                                    <div class="service__item-progressBar--web" style="--percent: 95%">
 
                                     </div>
                                 </div>
-                                <div class="service__item-right__name">Web Design</div>
-                                <div class="service__item-right__desc">HTML, CSS, JQuery</div>
+                                <div class="service__item-name">Web Design</div>
+                                <div class="service__item-desc">HTML, CSS, JQuery</div>
                             </div>
                         </div>
                     </div>
@@ -221,27 +224,26 @@
                             <div class="service__item-round is--active">
                                 <img src="./image/Page-1.png" alt="">
                             </div>
-                            <div class="service__item-left__title is--active">Graphics Design</div>
-                            <ul class="service__item-left__list">
-                                <li class="service__item-left__item is--active"></li>
-                                <li class="service__item-left__item is--active"></li>
-                                <li class="service__item-left__item is--active"></li>
+                            <div class="service__item-nameL is--active">Graphics Design</div>
+                            <ul class="service__item-list">
+                                <li class="service__item-solid is--active"></li>
+                                <li class="service__item-solid is--active"></li>
+                                <li class="service__item-solid is--active"></li>
                             </ul>
-                            <div class="service__item-left__content is--active">
+                            <div class="service__item-contentL is--active">
                                 Lorem ipsum dolor sit amet,Stet clita kasd lorem ipsum dolor sit amet. sed diam eirmod
                                 tempor dolore.
                             </div>
-                            <a href="#" class="service__item-left__btn is--active">Know More <i
-                                    class="fal fa-arrow-right"></i></a>
+                            <a href="#" class="service__item-btn is--active">Know More <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="arrow-right" class="svg-inline--fa fa-arrow-right fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M190.5 66.9l22.2-22.2c9.4-9.4 24.6-9.4 33.9 0L441 239c9.4 9.4 9.4 24.6 0 33.9L246.6 467.3c-9.4 9.4-24.6 9.4-33.9 0l-22.2-22.2c-9.5-9.5-9.3-25 .4-34.3L311.4 296H24c-13.3 0-24-10.7-24-24v-32c0-13.3 10.7-24 24-24h287.4L190.9 101.2c-9.8-9.3-10-24.8-.4-34.3z"></path></svg></a>
                         </div>
                         <div class="service__item-right">
-                            <div class="service__item-right__content">
-                                <div class="service__item-right__percent" >85</div>
-                                <div class="service__item-right__bar  ">
-                                    <div class="service__item-right__bar--graphics" style="--percent: 85%"></div>
+                            <div class="service__item-contentR">
+                                <div class="service__item-percent">85%</div>
+                                <div class="service__item-progressBar  ">
+                                    <div class="service__item-progressBar--graphics" style="--percent: 85%"></div>
                                 </div>
-                                <div class="service__item-right__name">Web Design</div>
-                                <div class="service__item-right__desc">Photoshop, Illustrator</div>
+                                <div class="service__item-name">Web Design</div>
+                                <div class="service__item-desc">Photoshop, Illustrator</div>
                             </div>
                         </div>
                     </div>
@@ -250,26 +252,26 @@
                             <div class="service__item-round">
                                 <img src="./image/1237114.png" alt="">
                             </div>
-                            <div class="service__item-left__title">Web Developement</div>
-                            <ul class="service__item-left__list">
-                                <li class="service__item-left__item"></li>
-                                <li class="service__item-left__item"></li>
-                                <li class="service__item-left__item"></li>
+                            <div class="service__item-nameL">Web Developement</div>
+                            <ul class="service__item-list">
+                                <li class="service__item-solid"></li>
+                                <li class="service__item-solid"></li>
+                                <li class="service__item-solid"></li>
                             </ul>
-                            <div class="service__item-left__content">
+                            <div class="service__item-contentL">
                                 Lorem ipsum dolor sit amet,Stet clita kasd lorem ipsum dolor sit amet. sed diam eirmod
                                 tempor dolore.
                             </div>
-                            <a href="#" class="service__item-left__btn">Know More <i class="fal fa-arrow-right"></i></a>
+                            <a href="#" class="service__item-btn">Know More <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="arrow-right" class="svg-inline--fa fa-arrow-right fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M190.5 66.9l22.2-22.2c9.4-9.4 24.6-9.4 33.9 0L441 239c9.4 9.4 9.4 24.6 0 33.9L246.6 467.3c-9.4 9.4-24.6 9.4-33.9 0l-22.2-22.2c-9.5-9.5-9.3-25 .4-34.3L311.4 296H24c-13.3 0-24-10.7-24-24v-32c0-13.3 10.7-24 24-24h287.4L190.9 101.2c-9.8-9.3-10-24.8-.4-34.3z"></path></svg></a>
                         </div>
                         <div class="service__item-right">
-                            <div class="service__item-right__content">
-                                <div class="service__item-right__percent" >70</div>
-                                <div class="service__item-right__bar ">
-                                    <div class="service__item-right__bar--developement" style="--percent: 70%"></div>
+                            <div class="service__item-contentR">
+                                <div class="service__item-percent" >70%</div>
+                                <div class="service__item-progressBar ">
+                                    <div class="service__item-progressBar--developement" style="--percent: 70%"></div>
                                 </div>
-                                <div class="service__item-right__name">Web Developement</div>
-                                <div class="service__item-right__desc">HTML, CSS, jQuery</div>
+                                <div class="service__item-nameR">Web Developement</div>
+                                <div class="service__item-desc">HTML, CSS, jQuery</div>
                             </div>
 
                         </div>
@@ -290,7 +292,7 @@
                                 <div class="portfolio__item-content">
                                     <div class="portfolio__item-title">Phone Mockup</div>
                                     <div class="portfolio__item-icon">
-                                        <i class="far fa-plus"></i>
+                                        <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="plus" class="svg-inline--fa fa-plus fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M416 208H272V64c0-17.67-14.33-32-32-32h-32c-17.67 0-32 14.33-32 32v144H32c-17.67 0-32 14.33-32 32v32c0 17.67 14.33 32 32 32h144v144c0 17.67 14.33 32 32 32h32c17.67 0 32-14.33 32-32V304h144c17.67 0 32-14.33 32-32v-32c0-17.67-14.33-32-32-32z"></path></svg>
                                     </div>
                                 </div>
                             </div>
@@ -303,7 +305,7 @@
                                 <div class="portfolio__item-content">
                                     <div class="portfolio__item-title">Phone Mockup</div>
                                     <div class="portfolio__item-icon">
-                                        <i class="far fa-plus"></i>
+                                        <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="plus" class="svg-inline--fa fa-plus fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M416 208H272V64c0-17.67-14.33-32-32-32h-32c-17.67 0-32 14.33-32 32v144H32c-17.67 0-32 14.33-32 32v32c0 17.67 14.33 32 32 32h144v144c0 17.67 14.33 32 32 32h32c17.67 0 32-14.33 32-32V304h144c17.67 0 32-14.33 32-32v-32c0-17.67-14.33-32-32-32z"></path></svg>
                                     </div>
                                 </div>
                             </div>
@@ -316,7 +318,7 @@
                                 <div class="portfolio__item-content">
                                     <div class="portfolio__item-title">Phone Mockup</div>
                                     <div class="portfolio__item-icon">
-                                        <i class="far fa-plus"></i>
+                                        <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="plus" class="svg-inline--fa fa-plus fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M416 208H272V64c0-17.67-14.33-32-32-32h-32c-17.67 0-32 14.33-32 32v144H32c-17.67 0-32 14.33-32 32v32c0 17.67 14.33 32 32 32h144v144c0 17.67 14.33 32 32 32h32c17.67 0 32-14.33 32-32V304h144c17.67 0 32-14.33 32-32v-32c0-17.67-14.33-32-32-32z"></path></svg>
                                     </div>
                                 </div>
                             </div>
@@ -329,7 +331,7 @@
                                 <div class="portfolio__item-content">
                                     <div class="portfolio__item-title">Phone Mockup</div>
                                     <div class="portfolio__item-icon">
-                                        <i class="far fa-plus"></i>
+                                        <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="plus" class="svg-inline--fa fa-plus fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M416 208H272V64c0-17.67-14.33-32-32-32h-32c-17.67 0-32 14.33-32 32v144H32c-17.67 0-32 14.33-32 32v32c0 17.67 14.33 32 32 32h144v144c0 17.67 14.33 32 32 32h32c17.67 0 32-14.33 32-32V304h144c17.67 0 32-14.33 32-32v-32c0-17.67-14.33-32-32-32z"></path></svg>
                                     </div>
                                 </div>
                             </div>
@@ -351,40 +353,89 @@
                 lorem ipsum dolor sit amet. sed diam nonumy eirmod tempor invidunt ut labore et dolore
                 is the magna aliquyam.
             </div>
-            <div class="testimonials__name">
-                John Doe
-            </div>
-            <div class="testimonials__position">CEO, ABC Company</div>
-            <div class="testimonials__slide">
-                <div class="testimonials__btns">
-                    <span class="testimonials__btn"></span>
-                    <span class="testimonials__btn is--active"></span>
-                    <span class="testimonials__btn"></span>
+           
+            
+            <div class="testimonials__slider">
+                <div class="testimonials__list-member">
+                    <div class="testimonials__item-member">
+                        <h2 class="testimonials__name"> John Doe</h2>
+                        <div class="testimonials__position">CEO, ABC Company</div>
+                    </div>
+                    <div class="testimonials__item-member">
+                        <h2 class="testimonials__name">Peter Pane </h2>
+                        <div class="testimonials__position">Leader, ABC Company</div>
+                    </div>
+                    <div class="testimonials__item-member">
+                        <h2 class="testimonials__name"> Master </h2>
+                        <div class="testimonials__position">Manager, ACB Company</div>
+                    </div>
                 </div>
-                <div class="testimonials__list">
-                    <div class="testimonials__item">
+                <div class="testimonials__btns">
+                    <span class="testimonials__btn is--active" onclick="currentSlide(1)"></span>
+                    <span class="testimonials__btn" onclick="currentSlide(2)"></span>
+                    <span class="testimonials__btn" onclick="currentSlide(3)"></span>
+                </div>
+                <div class="testimonials__list-image">
+                    <div class="testimonials__item-image">
                         <div class="testimonials__img">
                             <img src="./image/1.png" alt="">
                         </div>
                     </div>
-                    <div class="testimonials__item">
+                    <div class="testimonials__item-image">
                         <div class="testimonials__img">
                             <img src="./image/3.png" alt="">
                         </div>
                     </div>
-                    <div class="testimonials__item">
+                    <div class="testimonials__item-image">
                         <div class="testimonials__img">
                             <img src="./image/2.png" alt="">
                         </div>
                     </div>
                 </div>
+                <div class="testimonials__popup">
+                    <div class="testimonials__popup-overlay"></div>
+                    <div class="testimonials__popup-content">
+                        <div class="testimonials__popup-close">
+                            <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="times" class="svg-inline--fa fa-times fa-w-11" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 352 512"><path fill="currentColor" d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z"></path></svg>
+                        </div>
+                        <div class="testimonials__popup-list">
+                            <div class="testimonials__popup-item">
+                                <h2 class="testimonials__popup-name">John Doe</h2>
+                                <p class="testimonials__popup-position">
+                                    CEO, ABC Company
+                                </p>
+                                <div class="testimonials__popup-desc">
+                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora excepturi laboriosam voluptas dolor veritatis voluptate in, ex similique veniam sequi aut optio harum voluptates iure nemo dolore laudantium obcaecati doloremque.
+                                </div>
+                            </div>
+                            <div class="testimonials__popup-item">
+                                <h2 class="testimonials__popup-name">Peter Pane</h2>
+                                <p class="testimonials__popup-position">
+                                    Leader, ABC Company
+                                </p>
+                                <div class="testimonials__popup-desc">
+                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora excepturi laboriosam voluptas dolor veritatis voluptate in, ex similique veniam sequi aut optio harum voluptates iure nemo dolore laudantium obcaecati doloremque.
+                                </div>
+                            </div>
+                            <div class="testimonials__popup-item">
+                                <h2 class="testimonials__popup-name">Master</h2>
+                                <p class="testimonials__popup-position">
+                                    Manager, ABC Company
+                                </p>
+                                <div class="testimonials__popup-desc">
+                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora excepturi laboriosam voluptas dolor veritatis voluptate in, ex similique veniam sequi aut optio harum voluptates iure nemo dolore laudantium obcaecati doloremque.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="circle__round circle__round--blue  circle__round--eight"></div>
-            <div class="circle__round circle__round--blue  circle__round--nine"></div>
-            <div class="circle__round-full circle__round--ten"></div>
-            <div class="circle__round-full circle__round--eleven"></div>
-            <div class="circle__round circle__round--pink  circle__round--twelve"></div>
-            <div class="background__curve background__curve--three">
+            <div class="round  round--eight"></div>
+            <div class="round  round--nine"></div>
+            <div class="round-full round-full--ten"></div>
+            <div class="round-full round-full--eleven"></div>
+            <div class="round round--twelve"></div>
+            <div class="background-curve background-curve--three">
                 <img src="./image/Path6.png" alt="">
             </div>
         </div>
@@ -451,8 +502,8 @@
                         </div>
                     </div>
                 </div>
-                <a href="#" class="blog__btn">View All</a>
             </div>
+            <a href="#" class="blog__btn">View All</a>
             <div class="blog__img">
                 <img src="./image/Path1.png" alt="">
             </div>
@@ -544,8 +595,10 @@
                 </div>
             </div>
         </div>
-        <a href="#" class="back-to-top"><i class="fal fa-chevron-up"></i></a>
-        <script src="./js/custom.js"></script>
+        <a href="#" class="back-to-top">
+            <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-up" class="svg-inline--fa fa-chevron-up fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M240.971 130.524l194.343 194.343c9.373 9.373 9.373 24.569 0 33.941l-22.667 22.667c-9.357 9.357-24.522 9.375-33.901.04L224 227.495 69.255 381.516c-9.379 9.335-24.544 9.317-33.901-.04l-22.667-22.667c-9.373-9.373-9.373-24.569 0-33.941L207.03 130.525c9.372-9.373 24.568-9.373 33.941-.001z"></path></svg>
+        </a>
+        <script  src="./js/custom.js"></script>
 </body>
 
 </html>
